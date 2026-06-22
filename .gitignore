@@ -1,0 +1,59 @@
+
+data/raw/
+data/staging/
+data/output/
+
+*.csv
+*.xlsx
+*.parquet
+*.json
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+
+.ipynb_checkpoints/
+
+# logs
+*.log
+
+# cache
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# JUPYTER NOTEBOOKS
+# =========================
+*.nbconvert.ipynb
+
+# =========================
+# TABLEAU
+# =========================
+*.hyper
+*.tde
+*.log
+
+# Tableau local extracts e caches
+*.twm
+*.twb~ 
+*.tbwx~ 
+
+# =========================
+# SISTEMA OPERACIONAL
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+
+.env
+.env.local
