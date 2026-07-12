@@ -1,19 +1,8 @@
-from sqlalchemy import create_engine
-from urllib.parse import quote
 import pandas as pd
-from dotenv import load_dotenv
-import os
+from database_connection import DatabaseConnectionFactory
 
-load_dotenv(".env.local")
-
-db_name = os.getenv("DATABASE_NAME")
-db_pass = quote(os.getenv("DATABASE_PASSWORD"))
-db_user = os.getenv("DATABASE_USER")
-con_url = f"postgresql+psycopg2://{db_user}:{db_pass}@localhost:5432/{db_name}"
-
-engine = create_engine(
-    con_url
-)
+factory = DatabaseConnectionFactory()
+engine = factory.get_engine()
 
 files_list = ["customers", "orders", "sellers", "products", "order_items", "order_payments", "order_reviews"]
 

@@ -7,7 +7,6 @@
 - order_reviews: avaliações dos clientes nos pedidos
 - order_items: itens vendidos por pedido
 - customers: clientes que realizam pedidos
-- cities: informação de geolocalização das cidades com latitude e longitude
 - products: catálogo de produtos
 - product_category_name_translation: a tradução do nome das categorias dos produtos
 - sellers: lojas que realizam as vendas
