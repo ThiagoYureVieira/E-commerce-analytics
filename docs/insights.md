@@ -9,4 +9,9 @@
 ## Tabela Products
 - PK - product_id
 
-- A tabelas Products possuia valores NAN em algumas colunas como product_description_lenght e product_name_lenght. Decidi retirá-las da tabela pois isso não é uma informação relevante para minha análise. Já a coluna product_category_name também possuía valores NAN, mas nesse caso substitui eles por "Outra" já que vou precisar dessa informação e provavelmente os produtos com essa coluna nula devem significar que eles não tem categoria definida. Também decidi manter os valores NAN nas colunas numéricas já que pretendo verificar se existe relação entre atraso de entrega e peso ou tamanho da mercadoria. Não quis preenchê-los com a média pq provavelmente teria valores falsos que poluiriam a análise.
+- A tabela Products possuia valores NAN em algumas colunas como product_description_lenght e product_name_lenght. Decidi retirá-las da tabela pois isso não é uma informação relevante para minha análise. Já a coluna product_category_name também possuía valores NAN, mas nesse caso substitui eles por "Outra" já que vou precisar dessa informação e provavelmente os produtos com essa coluna nula devem significar que eles não tem categoria definida. Também decidi manter os valores NAN nas colunas numéricas já que pretendo verificar se existe relação entre atraso de entrega e peso ou tamanho da mercadoria. Não quis preenchê-los com a média pq provavelmente teria valores falsos que poluiriam a análise.
+
+## Tabelas Reviews
+- PK - review_id e order_id
+
+- A tabela Reviews tem alguns valores duplicados na coluna review_id, no entanto esses valores não refletem necessariamente em um problema, pois a duplicação só se configura nesse contexto se a review_id e a order_id forem duplicadas simultaneamente. Sobre os valores nulos, é algo da regra de negócio já que o usuário pode criar reviews sem título e sem corpo, apenas nota.
